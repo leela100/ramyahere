@@ -1,0 +1,72 @@
+{{ define "main" }}
+  <div style="padding: 3rem;">
+    <h1 style="color: blue;">🎵 Contemporary Classical Works (Western and Indian)</h1>
+    
+    <div class="section-intro">
+  {{ .Content }}
+</div>
+
+
+    <ul style="list-style: none; padding: 0;">
+      {{ range .Pages }}
+        <li style="margin-bottom: 3rem; border-bottom: 1px solid #ccc; padding-bottom: 2rem;">
+          <h2>{{ .Title }}</h2>
+
+          {{ with .Params.instrumentation }}
+            <p><em>{{ . }}</em></p>
+          {{ end }}
+
+          {{ with .Params.description }}
+            <p>{{ . }}</p>
+          {{ end }}
+
+       {{ with .Params.youtube }}
+  <div style="margin: 1rem 0;">
+    <iframe width="560" height="315"
+      src="https://www.youtube.com/embed/{{ . }}"
+      frameborder="0"
+      allowfullscreen>
+    </iframe>
+  </div>
+{{ end }}
+
+{{ with .Params.bandcamp }}
+  <div style="margin: 1rem 0;">
+    <iframe style="border: 0; width: 100%; max-width: 560px; height: 472px;"
+      src="{{ . }}"
+      seamless>
+      <a href="{{ . }}">Listen on Bandcamp</a>
+    </iframe>
+  </div>
+{{ end }}
+
+{{ with .Params.spotify }}
+  <p><strong>🎵 Spotify:</strong> <a href="{{ . }}" target="_blank">Stream</a></p>
+{{ end }}
+
+{{ with .Params.applemusic }}
+  <p><strong>🍎 Apple Music:</strong> <a href="{{ . }}" target="_blank">Listen</a></p>
+{{ end }}
+
+          {{ with .Params.scorelink }}
+            <p><a href="{{ . }}" target="_blank">📄 View Score</a></p>
+          {{ end }}
+
+              <p><a href="{{ .RelPermalink }}" style="
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  background-color: #0687f5;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  margin-top: 1rem;
+">
+  What is this about? Click for more!
+</a>
+</p>
+        </li>
+      {{ end }}
+    </ul>
+  </div>
+{{ end }}

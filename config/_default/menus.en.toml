@@ -1,0 +1,48 @@
+  [[main]]
+  name = "Home"
+  identifier = "home"
+  weight = 100
+  url = "/"
+
+  [[main]]
+  name = "Bio"
+  weight = 200
+  identifier = "bio"
+  url = "/bio/"
+
+  [[main]]
+  name = "Portfolio"
+  weight = 300
+  identifier = "portfolio"
+
+  [[main]]
+  name = "Contemporary Classical Works"
+  weight = 310
+  identifier = "classical"
+  url = "/classical/"
+  parent = "portfolio" 
+
+ [[main]]
+  name = "Works released as 'Mukura'"
+  weight = 320
+  identifier = "iammukura"
+  url = "/iammukura/"
+  parent = "portfolio" 
+
+  ## [[main]]
+  ## name = "Poetry"
+  ## weight = 400
+  ## identifier = "poetry"
+  ## url = "/poetry/"
+
+  [[main]]
+  name = "Contact"
+  weight = 500
+  identifier = "contact"
+  url = "/contact/"
+
+ # [[footer]]
+  #name = "imprint"
+  #weight = 1
+  #identifier = "imprint"
+  #url = "/imprint/"

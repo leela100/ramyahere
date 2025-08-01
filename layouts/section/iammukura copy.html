@@ -1,0 +1,77 @@
+{{ define "main" }}
+  <div style="padding: 3rem;">
+    <h1 style="color: teal;"> Genre-Fluid works released as 'Mukura'</h1>
+<div class="section-intro">
+  {{ .Content }}
+</div>
+
+
+    <ul style="list-style: none; padding: 0;">
+      {{ range .Pages }}
+        <li style="margin-bottom: 3rem; border-bottom: 1px solid #ccc; padding-bottom: 2rem;">
+          <h2>{{ .Title }}</h2>
+
+          {{ with .Params.instrumentation }}
+            <p><em>{{ . }}</em></p>
+          {{ end }}
+
+          {{ with .Params.description }}
+            <p>{{ . }}</p>
+          {{ end }}
+
+          {{ with .Params.youtube }}
+            <div style="margin: 1rem 0;">
+              <iframe width="560" height="315"
+                src="https://www.youtube.com/embed/{{ . }}"
+                frameborder="0"
+                allowfullscreen>
+              </iframe>
+            </div>
+          {{ end }}
+
+
+
+{{ with .Params.applemusic }}
+  <div style="margin: 2rem 0;">
+    <iframe allow="autoplay *; encrypted-media *; fullscreen *; clipboard-write"
+      frameborder="0"
+      height="250"
+      style="width:100%;max-width:660px;overflow:hidden;border-radius:10px;"
+      sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation"
+      src="{{ . }}">
+    </iframe>
+  </div>
+{{ end }}
+{{ with .Params.bandcamp }}
+  <div style="margin: 2rem 0;">
+    <iframe style="border: 0; width: 100%; max-width: 660px; height: 270px;"
+      src="{{ . }}"
+      seamless>
+      <a href="{{ . }}">Listen on Bandcamp</a>
+    </iframe>
+  </div>
+{{ end }}
+
+        {{ with .Params.spotify }}
+  <p><strong>🎵 Spotify:</strong> <a href="{{ . }}" target="_blank">Stream</a></p>
+{{ end }}
+
+
+          <p><a href="{{ .RelPermalink }}" style="
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  background-color: #006666;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  margin-top: 1rem;
+">
+  🎧 More Listening Options
+</a>
+</p>
+        </li>
+      {{ end }}
+    </ul>
+  </div>
+{{ end }}
