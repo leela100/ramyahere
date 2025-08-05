@@ -18,7 +18,7 @@ hugo --gc --minify
 2) Commit to Git
 
 git add .
-git commit -m "Cleaned up sidebar styles and moved to sidebar.scss"
+git commit -m "MESSAGE"
 
 
 3) Push to Github
