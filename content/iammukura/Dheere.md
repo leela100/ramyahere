@@ -1,12 +1,14 @@
 +++
 title = "Dheere Dheere Re Mana (2021)"
-description = "Writter, composed, produced and sung by me"
+description = "Composed, produced and sung by Mukura"
 weight = 2
 youtube = "zu9rXFoFSUM"
 
 +++
 
-## 🎶 *Dheere Dheere Re Mana* — Single
+## 🎶 Listen:
+
+Dheere Dheere Re Mana has been composed, produced and sung by me, with lyrics taken from the couplets of the 15th-century mystic-philosopher poet Kabir Das
 
 🎬 **YouTube**  
 [Watch on YouTube](https://www.youtube.com/watch?v=zu9rXFoFSUM)

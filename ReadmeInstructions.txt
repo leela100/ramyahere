@@ -28,7 +28,7 @@ git push origin main
 ALL GIT Code together: copy paste by editing message
 
 git add .
-git commit -m "MESSAGE"
+git commit -m "Minor updates to content"
 git push origin main
 
 

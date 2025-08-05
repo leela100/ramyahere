@@ -1,7 +1,7 @@
 
 +++
 title = "Onward and Backward (2020)"
-description = "Experimental pop EP released under the name Mukura"
+description = "Written, composed, produced and sung by Mukura"
 weight = 1
 
 applemusic = "https://embed.music.apple.com/kw/album/onward-and-backward-ep/1495535898"
@@ -12,7 +12,9 @@ bandcamp = "https://bandcamp.com/EmbeddedPlayer/album=1393453870/size=large/bgco
 
 
 
-## Listen to My Work
+## 🎶 Listen:
+
+The EP Onward and Backward has been written, composed, produced and sung by me. 
 
 🎧 **YouTube Playlist**  
 [Onward and Backward by Mukura](https://www.youtube.com/playlist?list=PLS3ht0M-8OLdcABndrZU16El2lJ91Fskp)
