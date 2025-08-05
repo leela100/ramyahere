@@ -25,6 +25,11 @@ git commit -m "MESSAGE"
 
 git push origin main
 
+ALL GIT Code together: copy paste by editing message
+
+git add .
+git commit -m "MESSAGE"
+git push origin main
 
 
 -----
