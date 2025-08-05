@@ -359,6 +359,44 @@ body {
   margin: 0;
 }
 
+.sidebar-bg {
+  background-image: url("/images/sidebarbg/8.jpg");
+  /* background: linear-gradient(135deg, #bdc3c7, #2c3e50); */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+}
+
+.sidebar-bg,
+.sidebar-bg * {
+  color: white !important;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(4px);
+}
+
+.sidebar-mukura {
+  background-color: rgba(0, 128, 128, 0.08);
+  background-image: url("/images/sidebarbg/8.jpg");
+  /* background: linear-gradient(135deg, #bdc3c7, #2c3e50); */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+}
+
+.sidebar-mukura,
+.sidebar-mukura * {
+  color: white !important;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(4px);
+}
+
+.sidebar-mukura .sidebar__introduction-description {
+  font-style: italic;
+  color: #004d4d;
+}
+
 .footer {
   text-align: center;
   margin: 0 auto;
@@ -1212,41 +1250,11 @@ td {
   border: 1px solid #464646;
 }
 
-.sidebar-bg {
-  /* background-image: url('/images/water.jpg'); */
-  background: linear-gradient(135deg, #bdc3c7, #2c3e50);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-}
-
-.sidebar-bg,
-.sidebar-bg * {
-  color: black !important;
-  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.6);
-}
-
-/* body {
-  background: linear-gradient(135deg, #bdc3c7, #2c3e50); // Moody Gray
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-*/
 .main-content, .post-content, wrapper_main {
   padding-left: 3rem;
   padding-right: 3rem;
   max-width: none;
   margin: 0;
-}
-
-.sidebar-mukura {
-  background-color: rgba(0, 128, 128, 0.08);
-}
-
-.sidebar-mukura .sidebar__introduction-description {
-  font-style: italic;
-  color: #004d4d;
 }
 
 .content-overlay {
@@ -1255,3 +1263,10 @@ td {
   border-radius: 8px;
   backdrop-filter: blur(4px);
 }
+
+/* body {
+  background: linear-gradient(135deg, #bdc3c7, #2c3e50); // Moody Gray
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+*/

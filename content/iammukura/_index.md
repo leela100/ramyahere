@@ -2,6 +2,8 @@
 title = "Experimental Pop works released as Mukura"
 layout = 'iammukura'
 description = "Lyrics, Composition and Performance by Ramya Thiyagarajan"
+profilePicture = "images/RamyapianoSquare.jpg" # new one for Mukura
+
 +++
 
 <h1 style="color: teal;"> Experimental Pop Works </h1>

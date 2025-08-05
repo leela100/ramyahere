@@ -79,3 +79,50 @@
     }
   }
 }
+
+// Generic sidebar background
+.sidebar-bg {
+   background-image: url('/images/sidebarbg/8.jpg');
+/* background: linear-gradient(135deg, #bdc3c7, #2c3e50); */
+    background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll; // optional, gives parallax feel
+  
+  
+}
+  // Apply color and visual filter to all children
+.sidebar-bg,
+.sidebar-bg * {
+  color: white !important;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(4px); // also needs background color with transparency
+}
+
+// Mukura-specific sidebar tweaks
+.sidebar-mukura {
+  background-color: rgba(0, 128, 128, 0.08); // subtle teal tint
+  background-image: url('/images/sidebarbg/8.jpg');
+/* background: linear-gradient(135deg, #bdc3c7, #2c3e50); */
+    background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll; // optional, gives parallax feel
+
+
+}
+
+.sidebar-mukura,
+.sidebar-mukura * {
+  color: white !important;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(4px); // also needs background color with transparency
+}
+
+.sidebar-mukura .sidebar__introduction-description {
+  font-style: italic;
+  color: #004d4d;
+}
+
+
+

@@ -15,11 +15,13 @@
    
   <div class="sidebar__content">
     <div class="sidebar__introduction">
-      <img
-        class="sidebar__introduction-profileimage"
-        src="{{ .Site.Params.profilePicture | relURL }}"
-        alt="profile picture"
-      />
+      {{ $profilePic := or .Params.profilePicture .Site.Params.profilePicture }}
+<img
+  class="sidebar__introduction-profileimage"
+  src="{{ $profilePic | relURL }}"
+  alt="profile picture"
+/>
+
    {{ $isMukura := in .Permalink "/iammukura/" }}
 {{ if .IsHome }}
   <div class="sidebar__introduction-title">
