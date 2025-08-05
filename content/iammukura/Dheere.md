@@ -3,6 +3,8 @@ title = "Dheere Dheere Re Mana (2021)"
 description = "Composed, produced and sung by Mukura"
 weight = 2
 youtube = "zu9rXFoFSUM"
+profilePicture = "images/RamyapianoSquare.jpg" # new one for Mukura
+layout = 'iammukura'
 
 +++
 

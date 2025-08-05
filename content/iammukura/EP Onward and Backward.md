@@ -3,6 +3,8 @@
 title = "Onward and Backward (2020)"
 description = "Written, composed, produced and sung by Mukura"
 weight = 1
+profilePicture = "images/RamyapianoSquare.jpg" # new one for Mukura
+layout = 'iammukura'
 
 applemusic = "https://embed.music.apple.com/kw/album/onward-and-backward-ep/1495535898"
 
